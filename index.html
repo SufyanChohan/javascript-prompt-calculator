@@ -11,46 +11,37 @@
             text-align: center;
             margin-top: 300px;
         }
-        .btn1{
-            width: 120px;
-            height: 40px;
-            background-color: rgb(42, 165, 149);
-            border-radius: 10px;
-            border: none;
-            margin-left: 20px;
-            color: white;
-            font-weight: bold;
-            font-size: larger;
-            
-            
+        .h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: underline;
         }
-        .btn2{
+        button{
             width: 120px;
             height: 40px;
-            background-color: rgb(42, 165, 149);
-            border-radius: 10px;
-            border: none;
-            margin-left: 20px;
-            color: white;
-            font-weight: bold;
-            font-size: larger;
-            margin-top: 30px;
             
+            border-radius: 10px;
+            border: 3px solid rgb(42, 165, 149); 
+            margin-left: 20px;
+            color: black;
+            font-weight: bold;
+            font-size: larger;    
         }
         
         button:hover{
             transform: scale(1.2);
             transition: 0.5s;
-            color: black;
+            color: white;
+            background-color: rgb(42, 165, 149);
         }
     </style>
 </head>
 <body>
     <div class="main">
-        <button class="btn1" onclick="add()">Plus+</button>
-        <button class="btn1" onclick="sub()">Minus-</button>
-        <button class="btn2" onclick="mult()">MultiplyX</button>
-        <button class="btn2" onclick="divide()">Divide/</button>
+        <h1 class="h1">CLICK ANY BUTTON TO CALCULATE</h1>
+        <button onclick="add()">Plus +</button>
+        <button onclick="sub()">Minus -</button>
+        <button onclick="mult()">Multiply x</button>
+        <button onclick="divide()">Divide /</button>
     </div>
     <script src="./app.js"></script>
 </body>
